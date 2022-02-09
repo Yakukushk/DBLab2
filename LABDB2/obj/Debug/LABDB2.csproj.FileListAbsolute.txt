@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\LABDB2\LABDB2\bin\Debug\LABDB2.exe.config
+C:\Users\User\source\repos\LABDB2\LABDB2\bin\Debug\LABDB2.exe
+C:\Users\User\source\repos\LABDB2\LABDB2\bin\Debug\LABDB2.pdb
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.Properties.Resources.resources
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.csproj.GenerateResource.cache
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.exe
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.pdb
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.Form1.resources
+C:\Users\User\source\repos\LABDB2\LABDB2\obj\Debug\LABDB2.Form2.resources
