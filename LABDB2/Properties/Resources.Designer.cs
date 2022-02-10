@@ -63,6 +63,46 @@ namespace LABDB2.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _211882_refresh_icon {
+            get {
+                object obj = ResourceManager.GetObject("211882_refresh_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8664831_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("8664831_user_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8664897_compass_direction_arrow_icon {
+            get {
+                object obj = ResourceManager.GetObject("8664897_compass_direction_arrow_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8664901_face_laugh_wink_icon {
+            get {
+                object obj = ResourceManager.GetObject("8664901_face_laugh_wink_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8673597_ic_fluent_person_add_filled_icon {
             get {
                 object obj = ResourceManager.GetObject("8673597_ic_fluent_person_add_filled_icon", resourceCulture);

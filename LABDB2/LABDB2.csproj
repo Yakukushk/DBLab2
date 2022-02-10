@@ -73,6 +73,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -107,6 +110,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8673849_ic_fluent_text_clear_formatting_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8664901_face_laugh_wink_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8664897_compass_direction_arrow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8664831_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211882_refresh_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
