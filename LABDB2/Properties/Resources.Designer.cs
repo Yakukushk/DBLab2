@@ -83,6 +83,16 @@ namespace LABDB2.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2849824_store_shopping_market_buy_shop_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("2849824_store_shopping_market_buy_shop_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8664831_user_icon {
             get {
                 object obj = ResourceManager.GetObject("8664831_user_icon", resourceCulture);

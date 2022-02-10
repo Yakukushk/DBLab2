@@ -21,3 +21,4 @@ C:\Users\User\source\repos\LABDB2\DBLab2\LABDB2\obj\Debug\LABDB2.csproj.Generate
 C:\Users\User\source\repos\LABDB2\DBLab2\LABDB2\obj\Debug\LABDB2.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\LABDB2\DBLab2\LABDB2\obj\Debug\LABDB2.exe
 C:\Users\User\source\repos\LABDB2\DBLab2\LABDB2\obj\Debug\LABDB2.pdb
+C:\Users\User\source\repos\LABDB2\DBLab2\LABDB2\obj\Debug\LABDB2.Form4.resources
