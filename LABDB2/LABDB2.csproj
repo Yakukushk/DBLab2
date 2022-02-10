@@ -123,5 +123,8 @@
   <ItemGroup>
     <None Include="Resources\211882_refresh_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2849824_store_shopping_market_buy_shop_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

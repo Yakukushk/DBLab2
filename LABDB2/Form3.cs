@@ -22,12 +22,19 @@ namespace LABDB2
     {
         DB data = new DB();
         int RowsSelected;
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            CreateCollumn();
+            RefreshDataGridView(dataGridView1);
+           
+            
+        }
         public Form3()
         {
-            
-            RefreshDataGridView(dataGridView1);
+
             InitializeComponent();
         }
+       
         private void CreateCollumn() {
             
             dataGridView1.Columns.Add("id", "Id");
@@ -64,10 +71,7 @@ namespace LABDB2
             }
             
         }
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -92,6 +96,44 @@ namespace LABDB2
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            RowsSelected = e.RowIndex;
+            if (e.RowIndex >= 0) {
+                DataGridViewRow row = dataGridView1.Rows[RowsSelected];
+                textBox1.Text = row.Cells[0].Value.ToString();
+                textBox2.Text = row.Cells[1].Value.ToString();
+                textBox3.Text = row.Cells[2].Value.ToString();
+                textBox4.Text = row.Cells[3].Value.ToString();
+                textBox5.Text = row.Cells[4].Value.ToString();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RefreshDataGridView(dataGridView1);
+        }
+        private void Search(DataGridView dataGridView) {
+            dataGridView.Rows.Clear();
+            string str = $"select * from test_db where concat (id, name, count_id, booking, price) like '%" + textBox_search.Text + "%'";
+            SqlCommand command = new SqlCommand(str, data.getConnection());
+            data.OpenConnection();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read()) {
+                Reader(dataGridView, reader);
+            }
+            reader.Close();
+        }
+        private void textBox_search_TextChanged(object sender, EventArgs e)
+        {
+            Search(dataGridView1);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
