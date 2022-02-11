@@ -18,15 +18,15 @@ namespace LABDB2
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
-            textBox2.PasswordChar = '*';
-            textBox1.MaxLength = 50;
-            textBox2.MaxLength = 10;
+            
             
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            ///textBox2.PasswordChar = '*';
+            textBox1.MaxLength = 50;
+            textBox2.MaxLength = 10;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,19 +37,18 @@ namespace LABDB2
                 var password_user = textBox2.Text;
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
                 DataTable dataTable = new DataTable();
-                string querystring = $"select id_user, login, password from register where login = '{login_user}' and password = '{password_user}'";
-                SqlCommand sqlCommand = new SqlCommand(querystring, data.getConnection());
+                //string querystring = $"select id_user, login, password from register where login = '{login_user}' and password = '{password_user}'";
+                SqlCommand sqlCommand = new SqlCommand("select * from register where login like @login and password = @password;", data.getConnection());
+                sqlCommand.Parameters.AddWithValue("@login", login_user);
+                sqlCommand.Parameters.AddWithValue("@password", password_user);
                 sqlDataAdapter.SelectCommand = sqlCommand;
                 sqlDataAdapter.Fill(dataTable);
                 if (dataTable.Rows.Count == 1)
                 {
                     MessageBox.Show("Succesfully!", " ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    Form1 form1 = new Form1();
-                    Form2 form2 = new Form2();
                     Form3 form3 = new Form3();
                     this.Hide();
                     form3.ShowDialog();
-                    form3.Show();
 
                 }
                 else
